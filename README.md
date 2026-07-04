@@ -186,10 +186,12 @@ context-aware recommendation system (e.g., "Focus/Work" playlists from Clusters
 
 ## 📎 Repository Contents
 
-- `report/` — full project report (PDF)
+- `OLAPReport.pdf` — full project report
 - `images/` — Power BI dashboard screenshots
-- `queries/` — sample MDX/OLAP and SQL queries
-- `notebooks/` — EDA and clustering notebook (Python)
+- `src/Data Mining/` — EDA notebook and clustering workflow
+- `src/Report/` — Power BI and Excel deliverables
+- `src/SSAS/` — OLAP cube and Analysis Services project files
+- `src/SSIS/` — ETL packages and related project files
 
 ---
 

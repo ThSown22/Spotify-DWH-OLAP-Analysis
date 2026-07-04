@@ -10,7 +10,7 @@ audio-feature "sound profile."
 > Instructor: ThS. Nguyễn Thị Kim Phụng
 > Team: Phan Thị Xuân Tiên · Nguyễn Văn Thanh Sơn
 
-📄 [Full report (PDF)](#) — *replace with your GitHub blob link*
+📄 [Full report (PDF)](./OLAPReport.pdf)
 
 ---
 
@@ -101,6 +101,49 @@ analysis):
 **Sample insight:** Japan stood out with 154 days in the Top 10 *and* 130 "viral"
 days — a market with both loyal, sustained listening and strong viral spread.
 
+### Dashboard 1 — Global Market Overview
+
+![Global Market Overview](images/powerbi_global_market_overview.webp)
+
+- **Popularity vs. Streams by month:** Average popularity dipped from 74.67
+  (Jan) to a Q1 low of 73.30 (Mar), then climbed to a Q2 high of 76.48 (Apr) and
+  held above 76 through May–June. Total Streams, meanwhile, held around
+  100K–112K through May before dropping sharply to ~40K in June — a gap most
+  likely caused by partial-month data at collection time rather than an actual
+  drop in listening.
+- **Durability & virality by country (treemap):** Japan leads decisively with
+  **154 days in the Top 10** and **130 viral days**, well ahead of Hong Kong,
+  Thailand, and other Asian markets in the sample — evidence of an unusually
+  loyal *and* highly viral listener base.
+- **Popularity vs. viral days by country (bar chart):** Among the sampled
+  markets, New Zealand and the United States post strong viral-day counts
+  alongside high average popularity, while Guatemala trails on both metrics.
+- **Geographic hotspot map:** Confirms the Americas, Europe, and East Asia as
+  the densest markets, supporting drill-down into the Cross-Country
+  Comparison dashboard.
+
+### Dashboard 5 — Monthly Trends & Country Comparison
+
+![Monthly Trends & Country Comparison](images/powerbi_monthly_trends_country_comparison.webp)
+
+- **Streams vs. popularity trend:** Total Streams trended downward across the
+  six periods analyzed (11,264 → 9,239 → 10,656 → 8,568 → 10,580 → 4,400),
+  while Average Popularity stayed remarkably stable in the 73–76 range —
+  reinforcing that raw stream volume and song popularity don't move together
+  1:1 in this dataset.
+- **Country breakdown (donut):** Most sampled countries (India, Indonesia,
+  Japan, Korea, Malaysia, Pakistan, Saudi Arabia, Singapore, etc.) had
+  comparable data coverage (~106 each), but their inner-ring viral counts
+  varied widely — **Japan led at 39**, versus single digits for Israel (6) and
+  Hong Kong (14) — showing virality is driven by market behavior, not just
+  data volume.
+- **Continent breakdown (bar chart):** Europe led on both **Total Streams
+  (21,597)** and **Viral Days Count (127)**, followed by the Americas (15,400 /
+  82) and Asia (12,320 / 109). Notably, Asia posted *more* viral days than the
+  Americas despite lower total stream volume — a sign of higher viral
+  intensity per stream in Asian markets.
+
+
 ## 🔍 Data Mining: Song Clustering
 
 Using **scikit-learn**, the team ran exploratory data analysis (15 statistical
@@ -144,7 +187,7 @@ context-aware recommendation system (e.g., "Focus/Work" playlists from Clusters
 ## 📎 Repository Contents
 
 - `report/` — full project report (PDF)
-- `dashboards/` — Power BI dashboard screenshots
+- `images/` — Power BI dashboard screenshots
 - `queries/` — sample MDX/OLAP and SQL queries
 - `notebooks/` — EDA and clustering notebook (Python)
 
